@@ -1,0 +1,49 @@
+{
+  "name": "piyo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build --turbopack",
+    "start": "next start",
+    "lint": "eslint",
+    "better-auth:generate": "pnpx @better-auth/cli generate --output db/schemas/auth.ts",
+    "drizzle:generate": "pnpm drizzle-kit generate",
+    "drizzle:migrate": "pnpm drizzle-kit migrate",
+    "drizzle:gm": "pnpm drizzle:generate && pnpm drizzle:migrate"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.57.4",
+    "better-auth": "^1.3.9",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "dotenv": "^17.2.2",
+    "drizzle-orm": "^0.44.5",
+    "drizzle-seed": "^0.3.1",
+    "drizzle-zod": "^0.8.3",
+    "init": "^0.1.2",
+    "lucide-react": "^0.543.0",
+    "nanoid": "^5.1.5",
+    "next": "15.5.2",
+    "pnpx": "^0.0.1",
+    "postgres": "^3.4.7",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "start": "^5.1.0",
+    "tailwind-merge": "^3.3.1"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
+    "@tailwindcss/postcss": "^4.1.13",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "drizzle-kit": "^0.31.4",
+    "eslint": "^9",
+    "eslint-config-next": "15.5.2",
+    "supabase": "^2.40.7",
+    "tailwindcss": "^4",
+    "tw-animate-css": "^1.3.8",
+    "typescript": "^5"
+  }
+}
